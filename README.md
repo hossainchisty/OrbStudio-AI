@@ -1,48 +1,110 @@
-# OrbStudio - AI Creative Director
+# OrbStudio AI — The Ultimate AI Creative Suite
 
-OrbStudio is a powerful, professional AI-driven creative assistant designed to help photographers and designers create stunning visual content.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Clerk](https://img.shields.io/badge/Auth-Clerk-6C47FF?style=flat-square&logo=clerk)](https://clerk.com/)
+[![Supabase](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com/)
+[![License](https://img.shields.io/badge/License-Private-red?style=flat-square)](LICENSE)
 
-## Features
-- **Intelligent AI**: Powered by **Gemini 2.0 Flash** via OpenRouter for high-quality creative reasoning.
-- **Product Photography**: Expert guidance on lighting, composition, and styling for hero shots.
-- **Fashion Photography**: Posing ideas, aesthetic styles, and technical camera settings.
-- **Image-to-Prompt**: Advanced visual analysis to generate high-quality AI prompts.
-- **Video Ads**: Compelling scripts and visual pacing for high-converting ads.
-- **Bilingual Support**: Support for both **English** and **Bangla**.
+**OrbStudio AI** is a comprehensive, enterprise-grade AI creative platform designed for photographers, designers, and digital marketers. It leverages state-of-the-art Large Language Models (LLMs) and computer vision to streamline the creative workflow, from conceptualizing product photography to generating high-converting video ad scripts.
 
-## Tech Stack
-- **Framework**: [Next.js](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Formatting**: [Marked](https://marked.js.org/) & [DOMPurify](https://github.com/cure53/dompurify)
-- **Auth**: [Clerk](https://clerk.com/)
-- **Database**: [Supabase](https://supabase.com/)
-- **LLM API**: [OpenRouter](https://openrouter.ai/) (Model: `google/gemini-2.0-flash-001`)
+---
 
-## Configuration
+## 🚀 Key Features
 
-Create a `.env.local` file in the root directory and add your keys:
+### 📸 Creative Studio
+*   **Product Photography**: Get expert-level guidance on lighting setups, camera settings, and composition for high-end product shots.
+*   **Fashion Photography**: Explore posing ideas, aesthetic styles, and technical configurations tailored for fashion shoots.
+*   **Image-to-Prompt**: Reverse-engineer any visual into a high-fidelity AI prompt for consistent recreation.
+*   **Image Upscaling**: Enhance and restore image quality using advanced AI super-resolution.
 
-```env
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+### 🎥 Video & Marketing
+*   **Video Ads Generator**: Create compelling scripts and visual pacing for high-converting social media and commercial ads.
+*   **ASMR Video Planner**: Specialized tools for planning sensory-focused video content.
+*   **Sticker Generator**: Transform ideas into unique, high-quality sticker designs.
+
+### 🛠️ Advanced Infrastructure
+*   **Multi-Model Integration**: Powered by **Gemini 2.0 Flash** via OpenRouter for rapid, high-quality creative reasoning.
+*   **Bilingual Interface**: Full support for **English** and **Bangla**, making it accessible to a global audience.
+*   **Real-time Chat**: Integrated AI chat interface for iterative creative brainstorming.
+*   **Secure Authentication**: Robust user management and data protection powered by **Clerk**.
+
+---
+
+## 💻 Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | [Next.js 15](https://nextjs.org/) (App Router, React 19) |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/) |
+| **Authentication** | [Clerk](https://clerk.com/) |
+| **Database** | [Supabase](https://supabase.com/) |
+| **AI Engine** | [OpenRouter](https://openrouter.ai/) (Gemini 2.0 Flash) |
+| **Icons** | [Lucide React](https://lucide.dev/) |
+| **Content** | [Marked](https://marked.js.org/) & [DOMPurify](https://github.com/cure53/dompurify) |
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+*   Node.js 20+ 
+*   npm / yarn / pnpm
+*   Accounts for Clerk, Supabase, and OpenRouter
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hossainchisty/OrbStudio-AI.git
+   cd OrbStudio-AI
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup:**
+   Create a `.env.local` file in the root directory and populate it with your credentials:
+   ```env
+   # AI & API
+   OPENROUTER_API_KEY=your_openrouter_api_key
+
+   # Authentication (Clerk)
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+
+   # Database (Supabase)
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── app/                # Next.js App Router (Pages & API Routes)
+├── components/         # Reusable UI Components
+├── lib/                # Shared Utilities, Contexts, and Types
+├── public/             # Static Assets
+├── next.config.ts      # Next.js Configuration
+└── tailwind.config.mjs # Tailwind CSS Configuration
 ```
 
-## Getting Started
+---
 
-First, install dependencies:
+## 📄 License
 
-```bash
-npm install
-```
+This project is currently **Private**. All rights reserved.
 
-Then, run the development server:
+---
 
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Developed with ❤️ by [hossainchisty](https://github.com/hossainchisty)
