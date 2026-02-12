@@ -15,9 +15,9 @@ import {
 } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 
-export default function ImageToPromptPage() {
+function ImageToPromptContent() {
     const { user } = useUser();
     const { t } = useLanguage();
     const isBn = t.settings.languageName === 'বাংলা';
@@ -369,5 +369,15 @@ OUTPUT CONSTRAINT: Provide ONLY the final prompt text. No introductory remarks, 
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function ImageToPromptPage() {
+    return (
+        <Suspense fallback={<div className="h-full flex items-center justify-center bg-white dark:bg-[#020005]">
+            <div className="w-12 h-12 border-4 border-emerald-500/20 border-t-emerald-500 rounded-full animate-spin" />
+        </div>}>
+            <ImageToPromptContent />
+        </Suspense>
     );
 }
