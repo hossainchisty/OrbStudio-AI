@@ -23,7 +23,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Extreme macro shot of sharp steel knife slicing translucent golden crystal pineapple with emerald crystal leaves on dark surface. Camera: Side angle macro lens, shallow depth focusing on blade-crystal contact, capturing honeycomb pattern light refraction. Lighting: Dramatic side lighting creating golden amber glow through crystal body, bright green leaf reflections, blade gleaming, dark background contrast highlighting crystal transparency. Audio: Binaural recording of blade penetrating crystal surface with sharp crack, internal honeycomb chambers shattering sequentially, delicate crystal fragments chiming, blade scraping surface, resonant crystal vibrations. Motion: Controlled cutting stroke revealing glowing amber interior with geometric honeycomb structure, crystal fragments separating with prismatic light effects, leaves swaying. Visual style: Luxury crystal macro with tropical fruit aesthetics, emphasizing golden transparency and geometric internal patterns.",
-        videoUrl: "/template_1751616404895.mp4"
+        videoUrl: "/asmr/video/template/template_1751616404895.mp4"
     },
     {
         id: 'eating-glass',
@@ -31,7 +31,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Static front-facing close-up shot: A young woman’s face is framed tightly from the nose down. Her lips are painted in a deep, glossy red, glistening under soft cinematic lighting. She slowly raises a translucent, glass-like emerald to her mouth. The crystal gem shimmers with inner green fire and sharp, faceted texture. As her teeth sink in, the glass emerald fractures with a clean break. ASMR: sharp crystalline crack, fine shards separating, slow crunching, followed by damp, delicate chewing and a faint breathy exhale. Her lips press and part with measured slowness, catching glimmers of reflected light as she chews. Visual tone: sharp, intimate, hyperreal.",
-        videoUrl: "/Emerald%20Crunch-Hypnotic-ASMR.mp4"
+        videoUrl: "/asmr/video/template/Emerald%20Crunch-Hypnotic-ASMR.mp4"
     },
     {
         id: 'strawberry-glass',
@@ -39,7 +39,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Static front-facing close-up shot: A young woman’s face is framed tightly from the nose down. Her lips are painted in a deep, glossy red, shining softly under cinematic lighting. She slowly lifts a translucent, glass-like red strawberry to her mouth. The crystal fruit glimmers with inner light and sharp texture. As she gently bites into it, the glass strawberry cracks cleanly. ASMR: high-pitched crack, subtle shards separating, soft chewing sounds, and breathy exhale. Her lips press slowly as she chews, catching reflections. Background is softly blurred, silent except for the sounds of the fruit. Visual tone: sharp, intimate, hyperreal. No dialogue. No subtitles",
-        videoUrl: "/Eating%20Glass%20Fruits.mp4"
+        videoUrl: "/asmr/video/template/Eating%20Glass%20Fruits.mp4"
     },
     {
         id: 'lime-cutting',
@@ -47,7 +47,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Extreme macro shot of black ceramic knife slicing fresh green lime on wooden cutting board. Camera: 45-degree overhead angle, shallow depth focusing on blade-lime contact. Lighting: Warm kitchen light from upper left, highlighting lime's textured peel and juice droplets on wood grain. Audio: Binaural recording of blade penetrating peel with subtle pop, juice squirting and dripping, pulp crackling, seeds rattling, blade scraping wood, citrus oil sizzling. Motion: Slow cutting strokes every 4-5 seconds, controlled downward pressure, lime segments opening revealing translucent pulp, juice pooling and dripping, oil mist spray. Visual style: Professional food macro with warm golden tones, emphasizing texture contrast between bumpy green peel and juicy interior, pristine kitchen aesthetic.",
-        videoUrl: "/Lime%20Cutting.mp4"
+        videoUrl: "/asmr/video/template/Lime%20Cutting.mp4"
     },
     {
         id: 'rainy-window',
@@ -55,7 +55,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Ultra-high definition overhead shot of pristine raindrops cascading down a large residential window during a gentle afternoon shower. Camera: Static macro composition at 30cm distance, shallow depth of field isolating individual droplets against blurred interior. Lighting: Soft overcast daylight creating delicate refractions through each water bead, subtle window frame shadows dancing across glass. Audio: High-fidelity binaural recording capturing rhythmic raindrop percussion on glass, subtle echo resonance, distant thunder rumble, cozy interior ambiance. Motion: Natural gravity-driven droplet trails merging and separating in organic patterns. Visual style: Hyper-realistic macro cinematography emphasizing water physics, light refraction, and meditative repetition. Duration: 90-120 seconds of continuous gentle rainfall.",
-        videoUrl: "/Rain.mp4"
+        videoUrl: "/asmr/video/template/Rain.mp4"
     },
     {
         id: 'glass-watermelon',
@@ -63,7 +63,7 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Extreme macro shot of a sharp chef's knife slicing through a crystalline glass watermelon wedge. The watermelon has a translucent green glass rind and a clear pink glass interior filled with high-viscosity red syrup and small black glass seeds. As the blade presses down, the glass 'gives way' with realistic micro-fractures, and the red liquid oozes out in slow motion. Professional studio lighting, 8k resolution, hyper-realistic glass textures, focusing on the satisfying friction between the metal blade and the glass surface. Watch in extreme slow motion as the glass shell develops micro-cracks before shattering like crystal. The thick orange liquid inside should have a honey-like viscosity, oozing out slowly and mixing with shimmering glass shards. High-end ray tracing, realistic light refraction through the glass and liquid, 8k resolution, cinematic studio lighting on a dark reflective surface. Visuals should imply high-fidelity ASMR sounds: the sharp 'tink' of metal on glass, the crisp 'crunch' of shattering crystal, and the thick, satisfying 'glug' and 'splat' of the viscous liquid hitting the surface. No background music, pure tactile sound focus.",
-        videoUrl: "/Glass%20Watermelon%20Shattered%20in%20Extreme%20Slow%20Motion.mp4"
+        videoUrl: "/asmr/video/template/Glass%20Watermelon%20Shattered%20in%20Extreme%20Slow%20Motion.mp4"
     },
     {
         id: 'rainbow-bottles',
@@ -71,30 +71,8 @@ const TEMPLATES = [
         category: "Public",
         isPublic: true,
         prompt: "Ultra-realistic ASMR video. Static low-angle shot from the bottom of a staircase, as if someone is waiting below and looking upward. The camera remains fixed, very close to the steps above. At the top edge of the frame, a single human foot briefly appears and slowly pushes glass bottles forward one by one. Six glass bottles, each filled with liquid in different vivid colors (red, blue, green, yellow, purple, orange), begin to slide, tip over, and fall down the stairs. As the bottles tumble downward, they collide with the steps and finally smash near the camera, bursting open. ASMR audio is extremely detailed: glass rolling, hollow impacts on wood or concrete steps, sharp glass cracking, liquid splashing, flowing, dripping, and spreading. The liquids mix and spread organically across the steps, creating splashes, droplets, reflections, and slow drips toward the camera. Lighting is natural and cinematic, highlighting glass shards, liquid motion, and reflections. No talking, no music — only footsteps, gravity, glass breaking, and liquid ASMR sounds. Highly realistic physics, macro detail, satisfying and immersive.",
-        videoUrl: "/Rainbow%20Bottles%20Cascade%20ASMR%20Glass%20&%20Liquid%20Fall.mp4"
+        videoUrl: "/asmr/video/template/Rainbow%20Bottles%20Cascade%20ASMR%20Glass%20&%20Liquid%20Fall.mp4"
     },
-    { id: 'planet-earth', title: "ASMR Cutting Planet Earth", category: "Micro", prompt: "Slicing through a miniature earth cake, geological layers revealed.", videoUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format" },
-    { id: 'glass-fruits', title: "Cutting Glass Fruits", category: "Satisfying", prompt: "Crystal clear glass apples shattering into musical shards.", videoUrl: "https://images.unsplash.com/photo-1576085898323-21811973cbd7?q=80&w=1200&auto=format" },
-    { id: 'clouds', title: "Cutting Clouds", category: "Atmosphere", prompt: "A knife slicing through fluffy, glowing clouds, releasing mist.", videoUrl: "https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=1200&auto=format" },
-    { id: 'ice-cutting', title: "Ice Cutting ASMR", category: "Satisfying", prompt: "Sharp chisel carving into deep blue glacier ice, fine snow spray.", videoUrl: "https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?q=80&w=1200&auto=format" },
-    { id: 'paper-garden', title: "Paper Garden Unfolds", category: "Paper", prompt: "Intricate origami garden blooming in fast motion on wood table.", videoUrl: "https://images.unsplash.com/photo-1520111007886-f2992v8a29ed?q=80&w=1200&auto=format" },
-    { id: 'paper-ocean', title: "Paper Ocean", category: "Paper", prompt: "Layered paper waves rolling, paper boat bobbing.", videoUrl: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?q=80&w=1200&auto=format" },
-    { id: 'underwater', title: "Underwater World", category: "Atmosphere", prompt: "Deep sea bio-luminescence, bubbles rising in slow motion.", videoUrl: "https://images.unsplash.com/photo-1544924734-7db3d931904e?q=80&w=1200&auto=format" },
-    { id: 'milky-way-boat', title: "Paper boat in the Milky Way", category: "Atmosphere", prompt: "A small paper boat sailing through a galaxy of stars.", videoUrl: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format" },
-    { id: 'frost-brush', title: "The frost brush condenses the polar ecology on the canvas.", category: "Art", prompt: "Ice crystal brushstrokes blooming into polar landscapes.", videoUrl: "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?q=80&w=1200&auto=format" },
-    { id: 'fluorescent-brushes', title: "Fluorescent brushes, illuminating fantastic lives in the night.", category: "Art", prompt: "Neon paint strokes coming to life on dark canvas.", videoUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format" },
-    { id: 'lava-brush', title: "Lava Brush, create a microscopic volcanic world.", category: "Art", prompt: "Glowing magma brushstrokes forming tiny volcanoes.", videoUrl: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format" },
-    { id: 'glass-tapping', title: "Glass Tapping", category: "Tapping", prompt: "Long nails gently tapping on thin crystal flute.", videoUrl: "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?q=80&w=1200&auto=format" },
-    { id: 'marshmallow-keyboard', title: "ASMR Marshmallow Keyboard", category: "Tech", prompt: "Keys made of soft pink marshmallows being pressed.", videoUrl: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1200&auto=format" },
-    { id: 'wood-tapping', title: "Wood Tapping", category: "Tapping", prompt: "Fingertips drumming on ancient mahogany chest.", videoUrl: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1200&auto=format" },
-    { id: 'octopus-rise', title: "Drawing Awakens: The Octopus Rises", category: "Art", prompt: "Ink sketch of an octopus peeling off paper into 3D space.", videoUrl: "https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=1200&auto=format" },
-    { id: 'cave-drip', title: "Echoing Cave Drip ASMR", category: "Ambience", prompt: "Single drop hitting still pool in dark cavern.", videoUrl: "https://images.unsplash.com/photo-1502657877623-f66bf489d236?q=80&w=1200&auto=format" },
-    { id: 'rain-umbrella', title: "Rain on Umbrella", category: "Ambience", prompt: "Heavy raindrops bouncing off a black silk umbrella.", videoUrl: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=1200&auto=format" },
-    { id: 'rain-window', title: "Rain on Window", category: "Ambience", prompt: "Water droplets racing down a foggy window at night.", videoUrl: "https://images.unsplash.com/photo-1428592953211-077101b2021b?q=80&w=1200&auto=format" },
-    { id: 'forest-rain', title: "Forest Rain", category: "Ambience", prompt: "Rain filtering through dense jungle canopy.", videoUrl: "https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1200&auto=format" },
-    { id: 'nail-care', title: "Nail Care", category: "Sensory", prompt: "Soft filing and polishing of elegant nails.", videoUrl: "https://images.unsplash.com/photo-1604654894610-df490c01fe50?q=80&w=1200&auto=format" },
-    { id: 'asmr-capybara', title: "ASMR Capybara", category: "Nature", prompt: "Capybara munching on crunchy vegetables in sun.", videoUrl: "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?q=80&w=1200&auto=format" },
-    { id: 'white-noise', title: "White Noise", category: "Ambience", prompt: "Soft static grain and celestial humming.", videoUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format" },
 ];
 
 export default function ASMRVideoPage() {

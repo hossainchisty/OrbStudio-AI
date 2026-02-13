@@ -12,22 +12,32 @@
 
 ## 🚀 Key Features
 
-### 📸 Creative Studio
-*   **Product Photography**: Get expert-level guidance on lighting setups, camera settings, and composition for high-end product shots.
-*   **Fashion Photography**: Explore posing ideas, aesthetic styles, and technical configurations tailored for fashion shoots.
-*   **Image-to-Prompt**: Reverse-engineer any visual into a high-fidelity AI prompt for consistent recreation.
-*   **Image Upscaling**: Enhance and restore image quality using advanced AI super-resolution.
+### 🎨 Creative Studio
+*   **Product Photography**: Professional lighting and composition guidance for e-commerce and studio shots.
+*   **Fashion Photography**: Editorial-grade posing, styling, and aesthetic direction for high-fashion results.
+*   **Image-to-Prompt**: Reverse-engineer any image into a high-fidelity AI prompt (Midjourney/Stable Diffusion compatible).
+*   **Virtual Try-On**: Visualize clothing and style changes with photorealistic AI precision.
+*   **Future Self**: A "Temporal Decryption" experience to visualize future aging and lifestyle changes with a cyberpunk aesthetic.
 
-### 🎥 Video & Marketing
-*   **Video Ads Generator**: Create compelling scripts and visual pacing for high-converting social media and commercial ads.
-*   **ASMR Video Planner**: Specialized tools for planning sensory-focused video content.
-*   **Sticker Generator**: Transform ideas into unique, high-quality sticker designs.
+### 🎥 Media & Production
+*   **Video Ads Studio**: End-to-end video ad creation with scriptwriting, visual storyboarding, and model selection (Lite & Pro).
+*   **ASMR Video Planner**: Specialized tools for creating sensory-rich ASMR content.
+*   **Music Creation**: Generate original music tracks and songs from text descriptions and lyrics.
+*   **Speech Synthesis**: Natural-sounding text-to-speech generation in multiple languages.
 
-### 🛠️ Advanced Infrastructure
-*   **Multi-Model Integration**: Powered by **Gemini 2.0 Flash** via OpenRouter for rapid, high-quality creative reasoning.
-*   **Bilingual Interface**: Full support for **English** and **Bangla**, making it accessible to a global audience.
-*   **Real-time Chat**: Integrated AI chat interface for iterative creative brainstorming.
-*   **Secure Authentication**: Robust user management and data protection powered by **Clerk**.
+### 🛠️ Utilities & Enhancements
+*   **Image Upscaling**: Restore and upscale images up to 4K resolution using advanced super-resolution.
+*   **AI Sticker Generator**: Create unique, high-quality digital stickers from simple text prompts.
+*   **Artistic QR Codes**: Generate scannable, visually stunning QR codes blended with artistic styles.
+
+### 🤖 Interactive Companions
+*   **Meet Her**: Engage with "Living Characters" (Elara, Sora, Mira) that possess evolving memories and distinct personalities.
+
+### 🏢 Enterprise Platform
+*   **Smart Dashboard**: Centralized hub for all creative tools with role-based access control.
+*   **Multi-Model Intelligence**: Powered by **Gemini 2.0 Flash** via OpenRouter for rapid, creative reasoning.
+*   **Bilingual Interface**: Native support for **English** and **Bangla**.
+*   **Secure Infrastructure**: Enterprise-grade authentication (**Clerk**) and scalable database (**Supabase**).
 
 ---
 
