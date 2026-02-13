@@ -113,6 +113,13 @@ export const TOOLS = [
         icon: 'Music',
         color: 'amber',
         description: 'Generate high-quality music and songs from lyrics and styles descriptions.'
+    },
+    {
+        id: 'future-self',
+        name: 'Future Self',
+        icon: 'Zap',
+        color: 'emerald',
+        description: 'See your potential. AI-powered visual aging and future lifestyle mapping.'
     }
 ];
 

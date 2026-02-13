@@ -3,7 +3,7 @@
 import { TOOLS } from '@/lib/constants';
 import { useLanguage } from '@/lib/LanguageContext';
 import { useUser } from '@clerk/nextjs';
-import { ArrowRight, Camera, Image as ImageIcon, Maximize, Music, Play, QrCode, Shirt, Sparkles, Speech, Sticker, User } from 'lucide-react';
+import { ArrowRight, Camera, Image as ImageIcon, Maximize, Music, Play, QrCode, Shirt, Sparkles, Speech, Sticker, User, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
@@ -19,6 +19,7 @@ const IconMap: Record<string, React.FC<any>> = {
     Speech: Speech,
     Music: Music,
     Shirt: Shirt,
+    Zap: Zap,
 };
 
 export default function DashboardHub() {

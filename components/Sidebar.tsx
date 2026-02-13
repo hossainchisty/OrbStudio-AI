@@ -19,7 +19,8 @@ import {
     Sticker,
     Sun,
     User,
-    X
+    X,
+    Zap
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -37,6 +38,7 @@ const IconMap: Record<string, React.FC<any>> = {
     Speech: Speech,
     Music: Music,
     Shirt: Shirt,
+    Zap: Zap,
 };
 
 interface SidebarProps {

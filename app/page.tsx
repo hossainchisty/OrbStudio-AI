@@ -40,6 +40,7 @@ const iconMap = {
   QrCode: QrCode,
   Speech: Speech,
   Music: Music,
+  Zap: Zap,
 };
 
 const DEMOS = [
