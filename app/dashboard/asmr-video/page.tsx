@@ -10,9 +10,10 @@ import {
     Sparkles,
     Video,
     Volume2,
-    VolumeX
+    VolumeX,
+    X
 } from 'lucide-react';
-import { motion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
 
 const TEMPLATES = [
@@ -108,8 +109,10 @@ export default function ASMRVideoPage() {
 
     // Video States
     const videoRef = useRef<HTMLVideoElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
     const [isPlaying, setIsPlaying] = useState(true);
     const [isMuted, setIsMuted] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const activeTemplate = TEMPLATES.find(e => e.id === selectedId) || TEMPLATES[0];
 
@@ -132,6 +135,11 @@ export default function ASMRVideoPage() {
     const toggleMute = (e: React.MouseEvent) => {
         e.stopPropagation();
         setIsMuted(!isMuted);
+    };
+
+    const toggleModal = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setIsModalOpen(!isModalOpen);
     };
 
     const handleGenerate = () => {
@@ -236,7 +244,10 @@ export default function ASMRVideoPage() {
                                     >
                                         {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
                                     </button>
-                                    <button className="p-2.5 rounded-xl bg-black/40 backdrop-blur-lg border border-white/10 text-white hover:bg-emerald-500 transition-all">
+                                    <button
+                                        onClick={toggleModal}
+                                        className="p-2.5 rounded-xl bg-black/40 backdrop-blur-lg border border-white/10 text-white hover:bg-emerald-500 transition-all"
+                                    >
                                         <Maximize2 size={16} />
                                     </button>
                                 </div>
@@ -449,6 +460,74 @@ export default function ASMRVideoPage() {
 
                 </div>
             </div>
+
+            {/* Cinematic ASMR Modal */}
+            <AnimatePresence>
+                {isModalOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[60] flex items-center justify-center p-4 md:p-8 bg-black/95 backdrop-blur-3xl"
+                    >
+                        {/* Ambient Background Glow for Modal */}
+                        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+                            <div className="absolute top-[20%] left-[20%] w-[40%] h-[40%] bg-emerald-500 blur-[200px] rounded-full" />
+                            <div className="absolute bottom-[20%] right-[20%] w-[40%] h-[40%] bg-blue-500 blur-[200px] rounded-full" />
+                        </div>
+
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                            exit={{ opacity: 0, scale: 0.95, y: 30 }}
+                            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                            className="relative w-full max-w-6xl aspect-video rounded-[32px] overflow-hidden bg-black shadow-[0_0_100px_rgba(0,0,0,0.5)] border border-white/10"
+                        >
+                            {/* Close Button Inside Container */}
+                            <button
+                                onClick={() => setIsModalOpen(false)}
+                                className="absolute top-6 right-6 p-2 md:p-3 rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 text-white/50 hover:text-white hover:bg-emerald-500 transition-all z-[70] flex items-center justify-center"
+                            >
+                                <X size={20} strokeWidth={3} />
+                            </button>
+
+                            <video
+                                src={activeTemplate.videoUrl}
+                                autoPlay
+                                loop
+                                muted={isMuted}
+                                playsInline
+                                className="w-full h-full object-cover"
+                            />
+
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
+
+                            {/* Modal Overlay Content */}
+                            <div className="absolute inset-x-0 bottom-0 p-8 md:p-12 flex items-end justify-between gap-8">
+                                <div className="space-y-3 flex-1">
+                                    <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter drop-shadow-2xl">
+                                        {activeTemplate.title}
+                                    </h2>
+                                    <p className="text-xs md:text-sm text-emerald-400 font-black uppercase tracking-[0.4em]">
+                                        Sensory Experience Mode
+                                    </p>
+                                    <p className="text-xs md:text-sm text-white/40 max-w-2xl font-medium italic">
+                                        "{activeTemplate.prompt}"
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-4 shrink-0">
+                                    <button
+                                        onClick={toggleMute}
+                                        className="p-5 rounded-3xl bg-white/5 backdrop-blur-2xl border border-white/10 text-white hover:bg-emerald-500 transition-all"
+                                    >
+                                        {isMuted ? <VolumeX size={32} /> : <Volume2 size={32} />}
+                                    </button>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
