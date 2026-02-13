@@ -10,9 +10,11 @@ import {
     LayoutDashboard,
     Maximize,
     Moon,
+    Music,
     Play,
     QrCode,
     Sparkles,
+    Speech,
     Sticker,
     Sun,
     User,
@@ -31,6 +33,8 @@ const IconMap: Record<string, React.FC<any>> = {
     Maximize: Maximize,
     Sticker: Sticker,
     QrCode: QrCode,
+    Speech: Speech,
+    Music: Music,
 };
 
 interface SidebarProps {

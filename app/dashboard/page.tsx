@@ -3,7 +3,7 @@
 import { TOOLS } from '@/lib/constants';
 import { useLanguage } from '@/lib/LanguageContext';
 import { useUser } from '@clerk/nextjs';
-import { ArrowRight, Camera, Image as ImageIcon, Maximize, Play, QrCode, Sparkles, Sticker, User } from 'lucide-react';
+import { ArrowRight, Camera, Image as ImageIcon, Maximize, Music, Play, QrCode, Sparkles, Speech, Sticker, User } from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
@@ -16,6 +16,8 @@ const IconMap: Record<string, React.FC<any>> = {
     Maximize: Maximize,
     Sticker: Sticker,
     QrCode: QrCode,
+    Speech: Speech,
+    Music: Music,
 };
 
 export default function DashboardHub() {
@@ -129,6 +131,16 @@ export default function DashboardHub() {
                                 gradient: 'from-pink-600 to-pink-400',
                                 shadow: 'shadow-pink-500/20',
                                 glow: 'bg-pink-500/20'
+                            },
+                            indigo: {
+                                gradient: 'from-indigo-600 to-indigo-400',
+                                shadow: 'shadow-indigo-500/20',
+                                glow: 'bg-indigo-500/20'
+                            },
+                            amber: {
+                                gradient: 'from-amber-600 to-amber-400',
+                                shadow: 'shadow-amber-500/20',
+                                glow: 'bg-amber-500/20'
                             },
                         };
 

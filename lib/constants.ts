@@ -92,6 +92,20 @@ export const TOOLS = [
         icon: 'QrCode',
         color: 'purple',
         description: 'Generate artistic, scannable QR codes with custom styles.'
+    },
+    {
+        id: 'speech-synthesis',
+        name: 'Speech Synthesis',
+        icon: 'Speech',
+        color: 'indigo',
+        description: 'Convert text to natural-sounding speech with multiple voices and languages.'
+    },
+    {
+        id: 'music-creation',
+        name: 'Music Creation',
+        icon: 'Music',
+        color: 'amber',
+        description: 'Generate high-quality music and songs from lyrics and styles descriptions.'
     }
 ];
 

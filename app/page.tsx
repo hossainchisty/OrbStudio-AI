@@ -14,10 +14,12 @@ import {
   Image as ImageIcon,
   Maximize,
   Moon,
+  Music,
   Play,
   PlayCircle,
   QrCode,
   Sparkles,
+  Speech,
   Sticker,
   Sun,
   User,
@@ -36,6 +38,8 @@ const iconMap = {
   Maximize: Maximize,
   Sticker: Sticker,
   QrCode: QrCode,
+  Speech: Speech,
+  Music: Music,
 };
 
 const DEMOS = [
@@ -382,7 +386,9 @@ export default function LandingPage() {
                 purple: 'bg-purple-500/10 text-purple-600 dark:text-purple-400',
                 emerald: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
                 rose: 'bg-rose-500/10 text-rose-600 dark:text-rose-400',
-              }[tool.color as 'blue' | 'purple' | 'emerald' | 'rose'] || 'bg-brand/10 text-brand';
+                indigo: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
+                amber: 'bg-amber-500/10 text-amber-600 dark:text-amber-400',
+              }[tool.color as 'blue' | 'purple' | 'emerald' | 'rose' | 'indigo' | 'amber'] || 'bg-brand/10 text-brand';
 
               return (
                 <motion.div
