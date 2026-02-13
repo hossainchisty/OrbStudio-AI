@@ -101,6 +101,13 @@ export const TOOLS = [
         description: 'Convert text to natural-sounding speech with multiple voices and languages.'
     },
     {
+        id: 'virtual-try-on',
+        name: 'Virtual Try-On',
+        icon: 'Shirt',
+        color: 'indigo',
+        description: 'Change or add clothing using simple prompts to design a pro look.'
+    },
+    {
         id: 'music-creation',
         name: 'Music Creation',
         icon: 'Music',

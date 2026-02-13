@@ -10,6 +10,7 @@ import {
     Image as ImageIcon,
     MessageSquare,
     Play,
+    Shirt,
     Sparkles,
     Trash2,
     User
@@ -23,6 +24,7 @@ const IconMap: Record<string, React.FC<any>> = {
     'fashion-photography': User,
     'image-to-prompt': ImageIcon,
     'video-ads': Play,
+    'virtual-try-on': Shirt,
 };
 
 interface Chat {

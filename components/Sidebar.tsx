@@ -13,6 +13,7 @@ import {
     Music,
     Play,
     QrCode,
+    Shirt,
     Sparkles,
     Speech,
     Sticker,
@@ -35,6 +36,7 @@ const IconMap: Record<string, React.FC<any>> = {
     QrCode: QrCode,
     Speech: Speech,
     Music: Music,
+    Shirt: Shirt,
 };
 
 interface SidebarProps {
