@@ -4,7 +4,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Clerk](https://img.shields.io/badge/Auth-Clerk-6C47FF?style=flat-square&logo=clerk)](https://clerk.com/)
 [![Supabase](https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com/)
-[![License](https://img.shields.io/badge/License-Private-red?style=flat-square)](LICENSE)
+
 
 **OrbStudio AI** is a comprehensive, enterprise-grade AI creative platform designed for photographers, designers, and digital marketers. It leverages state-of-the-art Large Language Models (LLMs) and computer vision to streamline the creative workflow, from conceptualizing product photography to generating high-converting video ad scripts.
 
